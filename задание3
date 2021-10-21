@@ -36,3 +36,25 @@ void main () {
 	cout << inf(x);
 
 }
+
+//номер 3
+
+#include <iostream>
+using namespace std;
+void popa(int a, int b = 2) {
+	while (a % b == 0) {
+		cout << b << " ";
+		a = a / b;
+	}
+	if (a != 1) {
+		popa(a, b + 1);
+	}
+}
+
+
+void main() {
+	int x;
+	cin >> x;
+	popa(x);
+
+}
