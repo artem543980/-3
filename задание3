@@ -1,0 +1,38 @@
+//номер 2
+
+#include <iostream>
+using namespace std;
+int inf(int a, int b = 1) {
+	if (a != 0) {
+		return inf(a / 10, b * 2) + (a % 10) * b;
+	}
+
+	return 0;
+}
+
+
+void main() {
+	int x;
+	cin >> x;
+	cout << inf(x);
+
+}
+
+//номер 1
+
+#include <iostream>
+using namespace std;
+int inf(int a, int b = 1) {
+	if (a != 0) {
+		return inf(a / 10, b * 2) + (a % 10) * b;
+	}
+
+}
+
+
+void main () {
+	int x;
+	cin >> x;
+	cout << inf(x);
+
+}
